@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.rover.android.roverapp.Fragments.HomeFragment">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:id="@+id/goToDashboardAct"
+        android:tint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_speedometer_black_48dp"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/goToCalendarAct"
+        android:tint="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_calendar_text_black_48dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/goToRedeemAct"
+        android:tint="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_gift_black_48dp" />
+
+</LinearLayout>

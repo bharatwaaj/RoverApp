@@ -1,0 +1,27 @@
+/*else if(deltaZ >= SOFT_SPEEDING_THRESHOLD_RANGE_START && deltaZ < SOFT_SPEEDING_THRESHOLD_RANGE_END){
+            speedCounter++;
+            speed += Math.abs(deltaZ);
+            uploadTripSpeedingDetailsToFirebase((long) (speed * 3.6), "speeding");
+        }  else if(deltaZ >= HARD_SPEEDING_THRESHOLD_RANGE_END) {
+            speedCounter+=3;
+            speed += Math.abs(deltaZ);
+            uploadTripSpeedingDetailsToFirebase((long) (speed * 3.6), "speeding");
+        } else if(deltaZ >= HARD_SPEEDING_THRESHOLD_RANGE_START && deltaZ < HARD_SPEEDING_THRESHOLD_RANGE_END){
+            speedCounter+=2;
+            speed += Math.abs(deltaZ);
+            uploadTripSpeedingDetailsToFirebase((long) (speed * 3.6), "speeding");
+        }*/
+
+        /*else if(deltaZ >= HARD_BRAKING_THRESHOLD_RANGE_START && deltaZ < HARD_BRAKING_THRESHOLD_RANGE_END){
+            brakeCounter+=2;
+            speed += Math.abs(deltaZ);
+            uploadTripSpeedingDetailsToFirebase((long) (speed * 3.6), "braking");
+        } else if(deltaZ >= HARD_BRAKING_THRESHOLD_RANGE_END ){
+            brakeCounter+=3;
+            speed += Math.abs(deltaZ);
+            uploadTripSpeedingDetailsToFirebase((long) (speed * 3.6), "speeding");
+        } else if(deltaZ >= SOFT_BRAKING_THRESHOLD_RANGE_START && deltaZ < SOFT_BRAKING_THRESHOLD_RANGE_END){
+            brakeCounter++;
+            speed += Math.abs(deltaZ);
+            uploadTripSpeedingDetailsToFirebase((long) (speed * 3.6), "braking");
+        }*/

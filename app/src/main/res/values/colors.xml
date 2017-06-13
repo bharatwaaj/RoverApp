@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Material Colors -->
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#F57C00</color>
+    <color name="colorPrimaryLight">#FFE0B2</color>
+    <color name="colorAccent">#309E9E9E</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorIcons">#212121</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="green">#66CD00</color>
+
+    <!-- Generic Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Other Activity Colors -->
+    <color name="text_grey">#898888</color>
+    <color name="facebook_btn_bg">#416BC1</color>
+    <color name="google_btn_bg">#dd4b39</color>
+
+    <!-- Walkthrough background color-->
+    <color name="bg_screen1">#8a63b3</color>
+    <color name="bg_screen2">#41a9cc</color>
+    <color name="bg_screen3">#e1615d</color>
+    <color name="bg_screen4">#fdbd57</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#22000000</color>
+    <color name="dot_dark_screen2">#22000000</color>
+    <color name="dot_dark_screen3">#22000000</color>
+    <color name="dot_dark_screen4">#22000000</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#fff</color>
+    <color name="dot_light_screen2">#fff</color>
+    <color name="dot_light_screen3">#fff</color>
+    <color name="dot_light_screen4">#fff</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+    <color name="grey_light">#9E9E9E</color>
+    <color name="grey_dark">#424242</color>
+    <color name="red">#F44336</color>
+    <color name="red_dark">#D32F2F</color>
+    <color name="blue_light">#03A9F4</color>
+    <color name="blue">#1E88E5</color>
+    <color name="blue_dark">#01579B</color>
+
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rover.android.roverapp.Activities.DashboardActivity">
+
+    <include layout="@layout/view_q_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MapsActivity" />
+            </LinearLayout>
+
+            <com.rover.android.roverapp.Widgets.QTextView
+                android:layout_width="150dp"
+                android:id="@+id/tripPointsTvNewDash"
+                android:layout_height="150dp"
+                android:text="1000"
+                android:lines="1"
+                android:textSize="36sp"
+                android:gravity="center"
+                android:background="@drawable/round_bg_accent"
+                android:padding="30dp"
+                android:layout_margin="12dp"
+                />
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/liveGraph"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="DISTANCE" />
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:id="@+id/distanceTvNewDash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:gravity="center"
+                        android:text="243 kms"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="AVERAGE SPEED" />
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:id="@+id/avgSpeedTvNewDash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:gravity="center"
+                        android:text="43 km/h"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME" />
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:id="@+id/timeTvNewDash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:gravity="center"
+                        android:text="43 mins"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="MAX SPEED" />
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:id="@+id/maxSpeedTvNewDash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:gravity="center"
+                        android:text="63 km/h"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/oval_bg_accent"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_crosshairs_gps_black_24dp"
+                        android:tint="@color/colorPrimary" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/oval_bg_accent"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_map_marker_black_24dp"
+                        android:tint="@color/colorPrimary" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

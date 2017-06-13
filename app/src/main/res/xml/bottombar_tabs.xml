@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_speedometer_black_24dp"
+        title="Dashboard" />
+    <tab
+        id="@+id/tab_stats"
+        icon="@drawable/ic_chart_line_black_24dp"
+        title="Trips" />
+    <tab
+        id="@+id/tab_profile"
+        icon="@drawable/ic_account_black_24dp"
+        title="Leaderboard" />
+</tabs>

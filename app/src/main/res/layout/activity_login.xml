@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_coord_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.rover.android.roverapp.Activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_q_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:alpha="0.8"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.rover.android.roverapp.Widgets.QTextView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/round_bg_accent"
+                    android:text="R"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="100sp"
+                    android:gravity="center"
+                    />
+
+                <com.rover.android.roverapp.Widgets.QEditText
+                    android:id="@+id/login_email_id_et"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/oval_bg_accent"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="14dp" />
+
+                <com.rover.android.roverapp.Widgets.QEditText
+                    android:id="@+id/login_password_et"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/oval_bg_accent"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLength="40"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="14dp" />
+
+                <com.rover.android.roverapp.Widgets.QTextView
+                    android:id="@+id/login_login_btn_tv"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/oval_bg_primary"
+                    android:onClick="handleLoginBtnClick"
+                    android:padding="16dp"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot "
+                        android:textColor="@color/text_grey"
+                        android:textSize="14dp" />
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:id="@+id/login_forgot_password_btn_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="handleForgotPassBtnClick"
+                        android:text="password?"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent" />
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="or"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:id="@+id/login_login_google_btn_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/google_btn_bg"
+                        android:onClick="handleGoogleLoginBtnClick"
+                        android:padding="16dp"
+                        android:text="Google"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't have an account yet? "
+                        android:textColor="@color/text_grey"
+                        android:textSize="14dp" />
+
+                    <com.rover.android.roverapp.Widgets.QTextView
+                        android:id="@+id/login_sign_up_btn_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="handleSignUpBtnClick"
+                        android:text="Sign Up!"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

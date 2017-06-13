@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "393116845605",
+    "firebase_url": "https://roverapp-ebd97.firebaseio.com",
+    "project_id": "roverapp-ebd97",
+    "storage_bucket": "roverapp-ebd97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393116845605:android:dda3d60aca2ce787",
+        "android_client_info": {
+          "package_name": "com.rover.android.roverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393116845605-sn0tkhm4qbj803gujqcn3bmcmv26euku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rover.android.roverapp",
+            "certificate_hash": "0938496a1996e963ccce902b85189f242606a7dd"
+          }
+        },
+        {
+          "client_id": "393116845605-his8ur7lofquk7qljh34ostn5l272tgr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdmWkEpFczu-8si2pqeXO9NpY1zg6snj0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393116845605-his8ur7lofquk7qljh34ostn5l272tgr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

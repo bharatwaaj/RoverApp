@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    app:contentInsetStart="0dp"
+    app:theme="@style/ToolbarStyle"
+    android:contentInsetLeft="0dp"
+    android:paddingLeft="0dp"
+    android:layout_alignParentTop="true"
+    android:minHeight="?attr/actionBarSize">
+    <com.rover.android.roverapp.Widgets.QTextView
+        android:id="@+id/toolBarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rover"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/q_toolbar_title_size"
+        />
+</android.support.v7.widget.Toolbar>
